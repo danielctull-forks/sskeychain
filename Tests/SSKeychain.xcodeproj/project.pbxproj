@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24A9C255158A500300352CE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A9C254158A500300352CE7 /* Foundation.framework */; };
+		24A9C260158A501F00352CE7 /* SSKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = B25737E0143AC2EC003FACED /* SSKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24A9C261158A503100352CE7 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = B25737E1143AC2EC003FACED /* SSKeychain.m */; };
 		B2059B5D1559058C003D2FAC /* SSKeychainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A5FACE143AC25C000F6011 /* SSKeychainTests.m */; };
 		B2059B5E1559058C003D2FAC /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = B25737E1143AC2EC003FACED /* SSKeychain.m */; };
 		B2059B601559058C003D2FAC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25737E4143AC308003FACED /* Security.framework */; };
@@ -19,7 +22,22 @@
 		B2A5FAD0143AC25C000F6011 /* SSKeychainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A5FACE143AC25C000F6011 /* SSKeychainTests.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		24A9C266158A50D000352CE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2A5FA86143AC133000F6011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2059B5B1559058C003D2FAC;
+			remoteInfo = SSKeychainTestsARC;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		24A9C253158A500300352CE7 /* libSSKeychain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSSKeychain.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		24A9C254158A500300352CE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		24A9C258158A500300352CE7 /* SSKeychain-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SSKeychain-Prefix.pch"; sourceTree = "<group>"; };
+		24A9C259158A500300352CE7 /* SSKeychain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		24A9C25A158A500300352CE7 /* SSKeychain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
 		B2059B681559058C003D2FAC /* SSKeychainTestsARC.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSKeychainTestsARC.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2059B691559058C003D2FAC /* SSKeychainTestsARC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SSKeychainTestsARC-Info.plist"; path = "/Users/samsoffes/Code/sskeychain/Tests/SSKeychainTestsARC-Info.plist"; sourceTree = "<absolute>"; };
 		B25737E0143AC2EC003FACED /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSKeychain.h; path = ../SSKeychain.h; sourceTree = "<group>"; };
@@ -36,6 +54,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		24A9C250158A500300352CE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24A9C255158A500300352CE7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2059B5F1559058C003D2FAC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,6 +85,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24A9C256158A500300352CE7 /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				24A9C259158A500300352CE7 /* SSKeychain.h */,
+				24A9C25A158A500300352CE7 /* SSKeychain.m */,
+				24A9C257158A500300352CE7 /* Supporting Files */,
+			);
+			path = SSKeychain;
+			sourceTree = "<group>";
+		};
+		24A9C257158A500300352CE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24A9C258158A500300352CE7 /* SSKeychain-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B25737E3143AC2F4003FACED /* SSKeychain */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +117,7 @@
 			children = (
 				B25737E3143AC2F4003FACED /* SSKeychain */,
 				B2A5FAB6143AC134000F6011 /* SSKeychainTests */,
+				24A9C256158A500300352CE7 /* SSKeychain */,
 				B2A5FA92143AC133000F6011 /* Frameworks */,
 				B2A5FA90143AC133000F6011 /* Products */,
 			);
@@ -83,6 +128,7 @@
 			children = (
 				B2A5FAB0143AC134000F6011 /* SSKeychainTests.octest */,
 				B2059B681559058C003D2FAC /* SSKeychainTestsARC.octest */,
+				24A9C253158A500300352CE7 /* libSSKeychain.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +139,7 @@
 				B25737E4143AC308003FACED /* Security.framework */,
 				B2A5FA93143AC133000F6011 /* Cocoa.framework */,
 				B2A5FAB1143AC134000F6011 /* SenTestingKit.framework */,
+				24A9C254158A500300352CE7 /* Foundation.framework */,
 				B2A5FA95143AC133000F6011 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -120,7 +167,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		24A9C251158A500300352CE7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24A9C260158A501F00352CE7 /* SSKeychain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		24A9C252158A500300352CE7 /* SSKeychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24A9C25E158A500300352CE7 /* Build configuration list for PBXNativeTarget "SSKeychain" */;
+			buildPhases = (
+				24A9C24F158A500300352CE7 /* Sources */,
+				24A9C250158A500300352CE7 /* Frameworks */,
+				24A9C251158A500300352CE7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24A9C267158A50D000352CE7 /* PBXTargetDependency */,
+			);
+			name = SSKeychain;
+			productName = SSKeychain;
+			productReference = 24A9C253158A500300352CE7 /* libSSKeychain.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		B2059B5B1559058C003D2FAC /* SSKeychainTestsARC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2059B651559058C003D2FAC /* Build configuration list for PBXNativeTarget "SSKeychainTestsARC" */;
@@ -180,6 +256,7 @@
 			targets = (
 				B2A5FAAF143AC134000F6011 /* SSKeychainTests */,
 				B2059B5B1559058C003D2FAC /* SSKeychainTestsARC */,
+				24A9C252158A500300352CE7 /* SSKeychain */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +308,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		24A9C24F158A500300352CE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24A9C261158A503100352CE7 /* SSKeychain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2059B5C1559058C003D2FAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,7 +336,56 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		24A9C267158A50D000352CE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2059B5B1559058C003D2FAC /* SSKeychainTestsARC */;
+			targetProxy = 24A9C266158A50D000352CE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		24A9C25C158A500300352CE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/SSKeychain.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		24A9C25D158A500300352CE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/SSKeychain.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		B2059B661559058C003D2FAC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -350,6 +484,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		24A9C25E158A500300352CE7 /* Build configuration list for PBXNativeTarget "SSKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24A9C25C158A500300352CE7 /* Debug */,
+				24A9C25D158A500300352CE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B2059B651559058C003D2FAC /* Build configuration list for PBXNativeTarget "SSKeychainTestsARC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
