@@ -239,7 +239,7 @@
 		B2A5FA86143AC133000F6011 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Sam Soffes";
 			};
 			buildConfigurationList = B2A5FA89143AC133000F6011 /* Build configuration list for PBXProject "SSKeychain" */;
@@ -491,6 +491,7 @@
 				24A9C25D158A500300352CE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2059B651559058C003D2FAC /* Build configuration list for PBXNativeTarget "SSKeychainTestsARC" */ = {
 			isa = XCConfigurationList;
